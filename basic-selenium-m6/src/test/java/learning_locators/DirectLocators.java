@@ -15,6 +15,12 @@ public class DirectLocators {
 		WebElement username = driver.findElement(By.id("email"));
 		username.sendKeys("admin");
 
+		WebElement password = driver.findElement(By.name("pass"));
+		password.sendKeys("12345678");
+		
+		WebElement checkBox = driver.findElement(By.className("custom-checkbox"));
+		checkBox.click();
+		
 		Thread.sleep(3000);
 		driver.quit();
 	}
