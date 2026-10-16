@@ -26,7 +26,7 @@ public class ShoppersStack {
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("Check")));
 
-		driver.findElement(By.id("Check")).click(); // ElementClickInterceptedException
+		driver.findElement(By.id("Check")).click(); // without exp wait => ElementClickInterceptedException
 
 		Thread.sleep(3000);
 		driver.quit();
