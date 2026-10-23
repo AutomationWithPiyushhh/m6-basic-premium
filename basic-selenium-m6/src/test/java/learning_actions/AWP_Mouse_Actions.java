@@ -53,7 +53,7 @@ public class AWP_Mouse_Actions {
 //
 //		Thread.sleep(1000);
 //
-//		act.scrollByAmount(0, 300).build().perform();
+		act.scrollByAmount(0, 300).build().perform();
 //
 ////		drag and drop
 //
@@ -67,9 +67,6 @@ public class AWP_Mouse_Actions {
 			.dragAndDrop(source, destination)
 //			.dragAndDropBy(source, 250,50)
 			.build().perform();
-		
-//		seekbar
-		
 
 		Thread.sleep(3000);
 		driver.quit();
